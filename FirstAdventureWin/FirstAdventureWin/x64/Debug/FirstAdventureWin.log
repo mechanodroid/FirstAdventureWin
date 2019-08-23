@@ -1,0 +1,29 @@
+﻿  DragonControlEngine.cpp
+  ManualControlEngine.cpp
+  TextGraphicsEngine.cpp
+  GameNotifier.cpp
+  NotificationEngine.cpp
+  TextNotifier.cpp
+  AttackCommand.cpp
+  ExitCommand.cpp
+  OpenCommand.cpp
+  UnlockCommand.cpp
+  WinCommand.cpp
+  ControllableEntity.cpp
+  EntityChildNode.cpp
+  EntityChildren.cpp
+d:\github\firstadventurewin\firstadventure\src\entity\entitychildren.cpp(23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  RenderableEntity.cpp
+  Game.cpp
+  main.cpp
+  GameState.cpp
+  LooseGameState.cpp
+  PlayGameState.cpp
+  Generating Code...
+  Compiling...
+  QuitGameState.cpp
+  ReadyGameState.cpp
+d:\github\firstadventurewin\firstadventure\src\state\readygamestate.cpp(27): warning C4129: '(': unrecognized character escape sequence
+  WinGameState.cpp
+  Generating Code...
+  FirstAdventureWin.vcxproj -> D:\github\FirstAdventureWin\FirstAdventureWin\x64\Debug\FirstAdventureWin.exe

@@ -85,6 +85,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../FirstAdventure/include/firstadventure/;../../FirstAdventure/include/firstadventure/engine/notification;../../FirstAdventure/include/firstadventure/engine/graphics;../../FirstAdventure/include/firstadventure/engine/control;../../FirstAdventure/include/firstadventure/engine;../../FirstAdventure/include/firstadventure/state;../../FirstAdventure/include/firstadventure/entity/command;../../FirstAdventure/include/firstadventure/entity;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
