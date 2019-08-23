@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{9646d5b7-5024-4d1c-b6c7-0f1dfcae61f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\control">
+      <UniqueIdentifier>{629a00ad-e25d-4813-a74e-755135fa9631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\graphics">
+      <UniqueIdentifier>{69f4db03-c746-49e1-b8e0-6f0bd81dbc90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\notification">
+      <UniqueIdentifier>{6954b394-4049-4adb-b286-0a0a79acc366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\entity">
+      <UniqueIdentifier>{72066c6c-12e2-457f-9280-6a59e52afc78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\entity\Command">
+      <UniqueIdentifier>{509a2c48-15e0-4502-be9d-f50dde544da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\state">
+      <UniqueIdentifier>{584d91f6-4a14-48a2-995f-599e304a7381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{ef1b53a4-9df8-477a-a8ca-4a27834b84ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\graphics">
+      <UniqueIdentifier>{4d1eb506-1828-4f48-a178-d563a98688ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\notifications">
+      <UniqueIdentifier>{87c7e1cf-a9b2-4ec2-a5ce-45c43bd9e18e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entity">
+      <UniqueIdentifier>{fc3c6f4b-96e5-473e-a4e4-d7e999f63e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entity\command">
+      <UniqueIdentifier>{8d02ed15-fdf4-416b-8e29-9b0cbabf9c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\state">
+      <UniqueIdentifier>{69525176-24d5-4399-8bc8-2fa94921b6b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\FirstAdventure\src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\control\DragonControlEngine.cpp">
+      <Filter>Source Files\engine\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\control\ManualControlEngine.cpp">
+      <Filter>Source Files\engine\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\graphics\TextGraphicsEngine.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\notification\GameNotifier.cpp">
+      <Filter>Source Files\engine\notification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\notification\NotificationEngine.cpp">
+      <Filter>Source Files\engine\notification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\notification\TextNotifier.cpp">
+      <Filter>Source Files\engine\notification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\ControllableEntity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\EntityChildNode.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\EntityChildren.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\RenderableEntity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\AttackCommand.cpp">
+      <Filter>Source Files\entity\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\OpenCommand.cpp">
+      <Filter>Source Files\entity\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\ExitCommand.cpp">
+      <Filter>Source Files\entity\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\UnlockCommand.cpp">
+      <Filter>Source Files\entity\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\WinCommand.cpp">
+      <Filter>Source Files\entity\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\state\GameState.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\state\LooseGameState.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\state\PlayGameState.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\state\QuitGameState.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\state\ReadyGameState.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FirstAdventure\src\state\WinGameState.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\Game.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\control\DragonControlEngine.hpp">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\control\ControlEngine.hpp">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\graphics\GraphicsEngine.hpp">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\graphics\TextGraphicsEngine.hpp">
+      <Filter>Header Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\control\ManualControlEngine.hpp">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\GameNotifier.hpp">
+      <Filter>Header Files\engine\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\NotificationEngine.hpp">
+      <Filter>Header Files\engine\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\Notifier.hpp">
+      <Filter>Header Files\engine\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\TextNotifier.hpp">
+      <Filter>Header Files\engine\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\Entity.hpp">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\ControllableEntity.hpp">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\EntityChildNode.hpp">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\EntityChildren.hpp">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\RenderableEntity.hpp">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\Stats.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\OpenCommand.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\AttackCommand.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\Command.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\ExitCommand.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\UnlockCommand.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\WinCommand.hpp">
+      <Filter>Header Files\entity\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\GameState.hpp">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\LooseGameState.hpp">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\PlayGameState.hpp">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\QuitGameState.hpp">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\ReadyGameState.hpp">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\WinGameState.hpp">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6CCEBDBD-2DAC-4558-95B3-01235B854BCB}</ProjectGuid>
+    <RootNamespace>FirstAdventureWin</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\github\FirstAdventure\FirstAdventure\include\firstadventure;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\engine\notification;D:\github\FirstAdventure\FirstAdventure\include;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\engine;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\state;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\entity\command;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\engine\graphics;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\engine\control;D:\github\FirstAdventure\FirstAdventure\include\firstadventure\entity;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\FirstAdventure\src\engine\control\DragonControlEngine.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\engine\control\ManualControlEngine.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\engine\graphics\TextGraphicsEngine.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\engine\notification\GameNotifier.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\engine\notification\NotificationEngine.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\engine\notification\TextNotifier.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\AttackCommand.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\ExitCommand.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\OpenCommand.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\UnlockCommand.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\command\WinCommand.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\ControllableEntity.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\EntityChildNode.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\EntityChildren.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\entity\RenderableEntity.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\Game.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\main.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\state\GameState.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\state\LooseGameState.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\state\PlayGameState.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\state\QuitGameState.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\state\ReadyGameState.cpp" />
+    <ClCompile Include="..\..\FirstAdventure\src\state\WinGameState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\control\ControlEngine.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\control\DragonControlEngine.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\control\ManualControlEngine.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\graphics\GraphicsEngine.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\graphics\TextGraphicsEngine.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\GameNotifier.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\NotificationEngine.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\Notifier.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\engine\notification\TextNotifier.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\AttackCommand.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\Command.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\ExitCommand.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\OpenCommand.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\UnlockCommand.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\command\WinCommand.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\ControllableEntity.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\Entity.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\EntityChildNode.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\EntityChildren.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\RenderableEntity.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\entity\Stats.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\Game.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\GameState.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\LooseGameState.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\PlayGameState.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\QuitGameState.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\ReadyGameState.hpp" />
+    <ClInclude Include="..\..\FirstAdventure\include\firstadventure\state\WinGameState.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
