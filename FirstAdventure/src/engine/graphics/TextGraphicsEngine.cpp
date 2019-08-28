@@ -26,7 +26,7 @@ void TextGraphicsEngine::render(Entity &entity)
     
     if (parent)
     {
-        cout << name << " are in " << parent->getDescription() << endl;
+		cout << name << " are in " << parent->getDescription() << endl;
         
         EntityChildren* children = parent->getChildren();
         
@@ -37,6 +37,9 @@ void TextGraphicsEngine::render(Entity &entity)
                 cout << name << " see " << children->getChild(i)->getDescription() << endl;
             }
         }
+
+		cout << name << " have " << entity.printSpells() << " spells" << endl;
+
         cout << "################################################################" << endl;
     }
     else

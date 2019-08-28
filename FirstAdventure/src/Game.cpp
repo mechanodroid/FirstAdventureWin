@@ -221,6 +221,7 @@ void Game::initialise()
     gameEntities_.emplace_back(swordChestR6);
     room6Children->addChild(swordChestR6);
     
+
     //Main Character - starts in Room 1
     Stats* playerStats = new Stats(100,100);
     gameStats_.emplace_back(playerStats);
@@ -232,6 +233,9 @@ void Game::initialise()
     gameEntities_.emplace_back(player);
     attackPlayer->setDefender(player);
     room1Children->addChild(player);
+
+	player->mySpells.push_back("burning hands");
+	player->mySpells.push_back("cure wounds");
     
     /******************
      * 3: Update the renderable / controlable lists

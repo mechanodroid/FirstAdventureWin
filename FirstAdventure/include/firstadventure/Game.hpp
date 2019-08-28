@@ -59,7 +59,8 @@ private:
     std::vector<Entity*> gameEntities_;
     std::vector<Command*> gameCommands_;
     std::vector<Stats*> gameStats_;
-    std::vector<EntityChildren*> gameChildren_;
+    std::vector<EntityChildren*> gameChildren_;	
+
     
 
 public:

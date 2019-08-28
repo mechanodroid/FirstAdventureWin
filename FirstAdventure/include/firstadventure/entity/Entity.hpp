@@ -12,7 +12,9 @@
 #include <stdio.h>
 #include <string>
 #include "Stats.hpp"
+#include <vector>
 
+using namespace::std;
 class Command;
 class EntityChildren;
 
@@ -23,14 +25,21 @@ class EntityChildren;
 
 class Entity
 {
+public:
+	vector<string> mySpells;
+
 private:
-    std::string description_;
+    string description_;
+
+
     Stats* stats_;
     Command* command_;
     Entity* parent_;
     EntityChildren* children_;
-        
+        	
+
 public:
+
     Entity()
     {
         description_ = "";
@@ -38,6 +47,7 @@ public:
         command_ = nullptr;
         parent_ = nullptr;
         children_ = nullptr;
+
     }
     
     Entity(std::string description) : description_{description}
@@ -60,6 +70,17 @@ public:
     {
         return description_;
     }
+
+	std::string printSpells()
+	{
+		std::string returnResult;
+		//Main Character - has two spells
+		for (string spell : mySpells)
+		{
+			returnResult += spell + ", ";
+		}
+		return returnResult;
+	}
     
     void setDescription(std::string description)
     {
