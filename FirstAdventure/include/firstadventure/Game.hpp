@@ -64,6 +64,8 @@ private:
     
 
 public:
+	Game();
+
     Game(GameState* state) : state_{state}
     {
         notificationEngine_ = new NotificationEngine();

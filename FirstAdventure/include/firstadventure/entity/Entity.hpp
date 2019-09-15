@@ -23,13 +23,16 @@ class EntityChildren;
  It is based on the Component pattern (http://www.gameprogrammingpatterns.com/component.html)
 */
 
+const int MAXSPELLS = 10;
+
 class Entity
 {
 public:
-	vector<string> mySpells;
 
 private:
     string description_;
+	string mySpells[MAXSPELLS];
+	int numSpells;
 
 
     Stats* stats_;
@@ -47,6 +50,7 @@ public:
         command_ = nullptr;
         parent_ = nullptr;
         children_ = nullptr;
+		numSpells = 0;
 
     }
     
@@ -71,13 +75,42 @@ public:
         return description_;
     }
 
+	void addSpell(std::string newSpell)
+	{
+		if (numSpells < MAXSPELLS)
+		{
+			mySpells[numSpells] = newSpell;
+			numSpells++;
+		}
+	}
+
+	void removeSpell(const std::string spellToRemove)
+	{
+		for (int i; i < numSpells; i++)
+		{
+			if (mySpells[i] == spellToRemove)
+			{
+				for (int j = i + 1; j < numSpells; j++)
+				{
+					mySpells[j - 1] = mySpells[j];
+				}
+				numSpells--;
+			}
+		}
+	}
+
 	std::string printSpells()
 	{
 		std::string returnResult;
 		//Main Character - has two spells
-		for (string spell : mySpells)
+		for (int i = 0; i < numSpells; i++)
 		{
-			returnResult += spell + ", ";
+			std::string spell = mySpells[i];
+			returnResult += spell;
+			if (i < numSpells - 1)
+			{
+				 returnResult += ", ";
+			}
 		}
 		return returnResult;
 	}

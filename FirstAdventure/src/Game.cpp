@@ -12,10 +12,16 @@
 #include "ExitCommand.hpp"
 #include "OpenCommand.hpp"
 #include "UnlockCommand.hpp"
+#include "UnlockCommand.hpp"
 #include "WinCommand.hpp"
 #include "AttackCommand.hpp"
 #include "GameNotifier.hpp"
 #include "TextNotifier.hpp"
+
+Game::Game()
+{
+
+}
 
 void Game::runGame()
 {
@@ -234,9 +240,10 @@ void Game::initialise()
     attackPlayer->setDefender(player);
     room1Children->addChild(player);
 
-	player->mySpells.push_back("burning hands");
-	player->mySpells.push_back("cure wounds");
-    
+	player->addSpell("burning hands");
+	player->addSpell("cure");
+	player->addSpell("lightning");
+		
     /******************
      * 3: Update the renderable / controlable lists
      ******************/
